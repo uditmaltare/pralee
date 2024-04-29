@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>pralee Technology</title>
+    
+    <style>
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px; /* Initially hidden */
+            width: 250px;
+            height: 100%;
+          
+            transition: 0.3s;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        .sidebar.active {
+            left: 0; /* Slide in when active */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 drop-shadow-md text-white">
+    <div id="sidebar" class="sidebar bg-gray-800">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gaming</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Toggle Button -->
+    <nav class="px-2 sm:px-6 py-2 backdrop-blur-3xl bg-opacity-70 bg-gray-800 w-auto z-20 left-0 relative top-2">
+        <div class="container flex flex-wrap items-center justify-between mx-auto w-full">
+            <span class="w-10"></span>
+            <h1 class="sr-only">Pralee Technology</h1>
+            <a href="https://praleetechnology.com/" class="flex items-center">
+                <img src="pralee.png" class="h-11" alt="Pralee logo">
+            </a>
+            <button id="toggleSidebar" type="button"
+                class="inline-flex items-center p-2 text-sm rounded-lg text-gray-400 hover:bg-gray-700">
+                <span class="sr-only">Toggle Sidebar</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24"
+                    width="24" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Rest of your content -->
+    <!-- Add your sections here -->
+
+    <script>
+        // JavaScript to handle sidebar toggle
+        document.getElementById('toggleSidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+    <section>
+        <div class="mt-20 ">
+            <h1 class=" text-white text-2xl md:text-4xl mt-6   md:text-left">We believe that<br>Technology should be
+                accessible and enjoyable for everyone</h1>
+            <div>
+    </section>
+    <div class="lg:text-right px-20 mt-20">
+        <h1 class="text-5xl ">Our<span
+                class="text-5xl bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+                Values<span>
+        </h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-20 ml-10 mr-10">
+        <div
+            class="bg-gray-800 hover:bg-gray-900 py-20 px-10 shadow-sm rounded-2xl flex shadow-purple-700 hover:shadow-sky-400 transition-all duration-500 flex-col flex-auto justify-start items-center w-full  h-auto">
+            <img src="hand.png" alt="">
+            <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+            <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and
+                understandable.<br>We always create super easy products.</p>
+        </div>
+        <div
+            class="bg-gray-800  hover:bg-gray-900 py-20 px-10 shadow-sm rounded-2xl flex shadow-purple-700 hover:shadow-sky-400 transition-all duration-500 flex-col flex-auto justify-start items-center w-full  h-auto">
+            <img src="hand.png" alt="">
+            <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+            <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and
+                understandable.<br>We always create super easy products.</p>
+        </div>
+        <div
+            class="bg-gray-800  hover:bg-gray-900 py-20 px-10 shadow-sm rounded-2xl flex shadow-purple-700 hover:shadow-sky-400 transition-all duration-500 flex-col flex-auto justify-start items-center w-full  h-auto">
+            <img src="hand.png" alt="">
+            <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+            <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and
+                understandable.<br>We always create super easy products.</p>
+        </div>
+        <div
+            class="bg-gray-800  hover:bg-gray-900 py-20 px-10 shadow-sm rounded-2xl flex shadow-purple-700 hover:shadow-sky-400 transition-all duration-500 flex-col flex-auto justify-start items-center w-full  h-auto">
+            <img src="hand.png" alt="">
+            <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+            <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and
+                understandable.<br>We always create super easy products.</p>
+        </div>
+        <div
+            class="bg-gray-800  hover:bg-gray-900 py-20 px-10 shadow-sm rounded-2xl flex shadow-purple-700 hover:shadow-sky-400 transition-all duration-500 flex-col flex-auto justify-start items-center w-full  h-auto">
+            <img src="hand.png" alt="">
+            <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+            <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and
+                understandable.<br>We always create super easy products.</p>
+        </div>
+        <div
+            class="bg-gray-800  hover:bg-gray-900 py-20 px-10 shadow-sm rounded-2xl flex shadow-purple-700 hover:shadow-sky-400 transition-all duration-500 flex-col flex-auto justify-start items-center w-full  h-auto">
+            <img src="hand.png" alt="">
+            <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+            <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and
+                understandable.<br>We always create super easy products.</p>
+        </div>
+
+
+    </div>
+    <div class=" px-20 mt-10">
+        <h1 class="text-6xl "><span
+                class="text-6xl bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">We
+                Are</span> Pralee
+        </h1>
+        <div class="flex items-center mt-16 justify-center md:mx-24 shadow-2xl md:border-4"><video src="pra.mp4" autoplay loop class="h-3/4">
+
+        </video>
+    </div>
+    </div>
+    <div class="mt-20 mb-20">
+        <div class="mt-10 text-5xl text-white text-center">Our Team Is Our<span
+                class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Power</span>
+        </div>
+        <div class="md:w-1/2 md:ml-12">
+            <div class="mt-10 p-4 rounded-xl hover:bg-gray-800 bg-gray-700  ">
+                <p class="text-white text-xl">We believe that our team's talent and expertise are what sets us apart and
+                    drive our success.</p>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse md:mr-14 ">
+            <div class="md:w-1/2 ">
+                <div class="mt-10 rounded-xl p-4 hover:bg-gray-800 bg-gray-700   ">
+                    <p class="text-white text-xl">We trust our team members to do their best work and support them in
+                        achieving their goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-1/2 md:ml-12">
+            <div class="mt-10 p-4 rounded-xl  hover:bg-gray-800 bg-gray-700  ">
+                <p class="text-white text-xl">We empower our team members to take ownership of their work and make
+                    decisions
+                    that drive our success.</p>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse ">
+            <div class="md:w-1/2 ">
+                <div class="mt-10 rounded-xl p-4 hover:bg-gray-800 bg-gray-700 md:mr-14  ">
+                    <p class="text-white text-xl">We invest in our team's skills and expertise, providing opportunities
+                        for them
+                        to grow and develop professionally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-40 flex flex-col items-center h-full bg-gradient-to-r from-purple-800 via-blue-700 to-sky-600" >
+        <h1 class="text-white text-4xl text-center">No matter what's your industry <br>We can help you to achieve your goals</h1>
+        <h1 class="text-white text-xl text-center pt-10 pb-10">We offer customization options that allow us to create solutions that are tailored to each customer's specific needs.</h1>
+        <span class="text-white">
+            <a class="border-2 rounded-lg p-4 mr-4 hover:bg-gray-800 transition-all duration-300"  href="#">Explore Services </a>
+            <a class="border-2 rounded-lg p-4  hover:bg-gray-800 transition-all duration-300" href="#">Get in touch</a>
+        </span>
+    </div>
+    <section class="mt-16 mb-14 flex px-10 sm:px-24 sm:pt-24 md:flex-row flex-col ml-12">
+        <div class="md:w-1/4 flex-auto w-full">
+            <img src="pralee.png" class="h-12 w-28 mb-6">
+            <p class="text-gray-400">Pralee is a leading software and gaming company dedicated to providing innovative,
+                easy
+                and fun products.</p>
+        </div>
+        <div class="flex flex-grow  flex-row">
+            <div class="flex-auto">
+                <h1 class="text-2xl mb-6 ">Discover</h1>
+                <ul>
+                    <li class="pb-4"> <a class="text-gray-400 hover:text-white " href="#">Services</a></li>
+                    <li class="pb-4"> <a class="text-gray-400 hover:text-white " href="#">Gaming</a></li>
+                </ul>
+            </div>
+            <div class="flex-auto">
+                <h1 class="text-2xl mb-6 ">About</h1>
+                <ul>
+                    <li class="pb-4"> <a class="text-gray-400 hover:text-white pb-4 " href="#">Contact us</a></li>
+                    <li class="pb-4"> <a class="text-gray-400 hover:text-white pb-4 " href="#">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-auto pt-10 md:pt-0">
+            <h1 class="text-2xl mb-6 ">Follow us</h1>
+            <div class="flex-row md:flex-col flex">
+                <div class="p-2">
+
+                    <a class="flex items-center text-gray-400 hover:text-white pl-2" href="https://www.linkedin.com/company/praleetechnology/">
+                        <img class="w-5 h-5 " src="link.png" alt="">
+                        <h1 class="pl-2  hidden md:inline"> Linkedin</h1>
+                    </a>
+
+                </div>
+                <div class="p-2">
+
+                    <a class="flex items-center text-gray-400 hover:text-white pl-2" href="https://www.youtube.com/@praleetechnology">
+                        <img class="w-5 h-5 " src="you.png" alt="">
+                        <h1 class="pl-2 hidden md:inline">youtube</h1>
+                    </a>
+
+                </div>
+                <div class="p-2">
+
+                    <a class="flex items-center text-gray-400 hover:text-white pl-2" href="https://github.com/praleetechnology">
+                        <img class="w-5 h-5 " src="git.png" alt="">
+                        <h1 class="pl-2  hidden md:inline"> Github</h1>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="p-5 text-slate-400 text-center">
+        © 2023 Pralee Technology • All Rights Reserved
+    </div>
+</body>
+
+</html>
